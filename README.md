@@ -20,6 +20,8 @@ If y represents the dependent variable and x the independent variable, this rela
 ![image](https://user-images.githubusercontent.com/104613195/168225866-ac8f6610-bdc3-4ac2-a24e-2b24ba08e189.png)
 
 # Program
+## Devolped by: SAFA
+## Registration no.: 212220230040
 ```
 import math
 import numpy as np
@@ -46,6 +48,7 @@ xmean=sx/N
 ymean=sy/N
 print("The regression line Y on X is ::: Y=%0.3f %0.3f (X- %0.3f)"% (ymean,byx,xmean))
 plt.scatter(x,y)
+plt.scatter(x,y)
 def Reg(x):
     return ymean + byx*(x-xmean)
 x=np.linspace(20,40,51)
@@ -53,10 +56,11 @@ y1=Reg(x)
 plt.plot(x,y1,'r')
 plt.xlabel('x-data')
 plt.ylabel('y-data')
+plt.legend(['Regression Line','Data points'])
 
 ```
 # Results and Output : 
 
-![image](https://user-images.githubusercontent.com/75234912/170186948-422fb6c1-2574-49c1-830b-3ca7dd274d21.png)
+![Screenshot 2022-05-25 111358](https://user-images.githubusercontent.com/75234912/170188509-b91c3a78-85d1-44f0-81dd-dbe0cfaacfef.png)
 
 Thus the analyzation of the given data using coeffificient of correlation and regression line has been successfully implemented.
